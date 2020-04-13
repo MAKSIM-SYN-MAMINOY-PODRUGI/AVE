@@ -1,7 +1,8 @@
 @charset "UTF-8";
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  border: none; }
 
 .col-lg-1 {
   width: calc( 6.77966102% * 1); }
