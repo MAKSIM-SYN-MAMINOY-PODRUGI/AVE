@@ -1,0 +1,22 @@
+.dark-main {
+  background: #1e1e2f;
+  color: #1e1e2f;
+}
+.primary {
+  background: #e14eca;
+}
+.dark-grey {
+  background: #27293d;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+* {
+  outline: none;
+}
+.white-text {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+}
