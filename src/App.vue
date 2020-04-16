@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="dark-main">
+  <div id="app">
     <component :is="layout">
       <router-view/>
     </component>
@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import EmptyLayout from '@/layouts/EmptyLayout'
-import MainLayout from '@/layouts/MainLayout'
+import Header from '@/layouts/Header'
+import Footer from '@/layouts/Footer'
 export default {
   computed: {
     layout() {
@@ -16,14 +16,11 @@ export default {
     }
   },
   components: {
-    EmptyLayout, MainLayout
+    Header, Footer
   }
 }
 </script>  
 
 <style lang="scss">
-@import '~materialize-css/dist/css/materialize.min.css';
-@import 'assets/index.css';
-@import 'assets/colors.css';
-@import 'assets/main.css';
+@import 'assets/style.css';
 </style>

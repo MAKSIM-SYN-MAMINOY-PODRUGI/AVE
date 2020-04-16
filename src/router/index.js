@@ -9,59 +9,35 @@ const router = new Router({
   base: process.env.BASE_URL,
   routes: [  
     {
-      path: '/login',
-      name: 'login',
-      meta: {layout: 'empty'},
-      component: () => import('../views/Login.vue')
+      path: '/brand',
+      name: 'brand',
+      component: () => import('../views/Brand.vue')
     },
     {
-      path: '/registration',
-      name: 'registration',
-      meta: {layout: 'empty'},
-      component: () => import('../views/Registration.vue')
-    },
-    {
-      path: '/',
-      name: 'Home',
-      meta: {layout: 'main', auth: true},
+      path: '/home',
+      name: 'home',
       component: () => import('../views/Home.vue')
     },
     {
-      path: '/categories',
-      name: 'categories',
-      meta: {layout: 'main', auth: true},
-      component: () => import('../views/Categories.vue')
+      path: '/local',
+      name: 'local',
+      component: () => import('../views/Local.vue')
     },
     {
-      path: '/detail/:id',
-      name: 'detail',
-      meta: {layout: 'main', auth: true},
-      component: () => import('../views/Detail.vue')
+      path: '/lookbook',
+      name: 'lookbook',
+      component: () => import('../views/Lookbook.vue')
     },
     {
-      path: '/history',
-      name: 'history',
-      meta: {layout: 'main', auth: true},
-      component: () => import('../views/History.vue')
+      path: '/product/:id',
+      name: 'product',
+      component: () => import('../views/Product.vue')
     },
     {
-      path: '/planning',
-      name: 'planning',
-      meta: {layout: 'main', auth: true},
-      component: () => import('../views/Planning.vue')
+      path: '/register',
+      name: 'register',
+      component: () => import('../views/Register.vue')
     },
-    {
-      path: '/profile',
-      name: 'profile',
-      meta: {layout: 'main', auth: true},
-      component: () => import('../views/Profile.vue')
-    },
-    {
-      path: '/record',
-      name: 'record',
-      meta: {layout: 'main', auth: true},
-      component: () => import('../views/Record.vue')
-    }
   ]
 })
 
