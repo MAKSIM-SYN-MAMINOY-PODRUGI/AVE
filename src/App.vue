@@ -1,6 +1,8 @@
 <template>
   <div id="app">
+    <Header />
     <router-view/>
+    <Footer />
   </div>
 </template>
 
@@ -8,11 +10,6 @@
 import Header from '@/layouts/Header'
 import Footer from '@/layouts/Footer'
 export default {
-  computed: {
-    layout() {
-      return (this.$route.meta.layout || 'empty') + '-layout'
-    }
-  },
   components: {
     Header, Footer
   }
