@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <Header />
+    <div :is="layout"></div>
     <router-view/>
     <Footer />
   </div>
 </template>
 
 <script>
-import Header from '@/layouts/Header'
+import MainHeaderLayout from '@/layouts/MainHeaderLayout'
+import EmptyHeaderLayout from '@/layouts/EmptyHeaderLayout'
+
 import Footer from '@/layouts/Footer'
+
 export default {
+  computed: {
+    layout() {
+      return (this.$route.meta.layout || 'main') + '-header-layout'
+    }
+  },
   components: {
-    Header, Footer
+    MainHeaderLayout, EmptyHeaderLayout, Footer
   }
 }
 </script>  

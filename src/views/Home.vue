@@ -113,5 +113,17 @@
         </div>
       </div>
     </div>
-  </main>
+  </main>    
 </template>
+
+
+<script>
+export default {
+  name: 'Home',
+  metaInfo() {
+    return {
+      title: this.$title('Home')
+    }
+  }
+}
+</script>
