@@ -6,16 +6,6 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-import dateFilter from '@/filters/date.filter'
-import currencyFilter from '@/filters/currency.filter'
-import localizeFilter from '@/filters/localize.filter'
-
-import messagePLugin from '@/utils/message.plugin'
-import titlePLugin from '@/utils/title.plugin'
-
-import tooltipDirective from '@/directives/tooltip.directive'
-import Loader from '@/components/app/Loader'
-
 import './registerServiceWorker'
 import 'materialize-css/dist/js/materialize.min'
 
@@ -28,27 +18,18 @@ Vue.config.productionTip = false
 Vue.use(Vuelidate)
 Vue.use(VueMeta)
 
-Vue.use(messagePLugin)
-Vue.use(titlePLugin)
-
-Vue.filter('date', dateFilter)
-Vue.filter('localize', localizeFilter)
-Vue.filter('currency', currencyFilter)
-
-Vue.directive('tooltip', tooltipDirective)
-Vue.component('Loader', Loader)
 Vue.component('Paginate', Paginate)
 
 
 firebase.initializeApp({
-  apiKey: "AIzaSyBiCGBv1-AsOGtT5CKhkmlDj3Dbc2FLsw0",
-  authDomain: "v-crm-system.firebaseapp.com",
-  databaseURL: "https://v-crm-system.firebaseio.com",
-  projectId: "v-crm-system",
-  storageBucket: "v-crm-system.appspot.com",
-  messagingSenderId: "362018986981",
-  appId: "1:362018986981:web:586208585ef521fb3c6d0c",
-  measurementId: "G-C1FDNJ2E8H"
+  apiKey: "AIzaSyD_SB8l90_XIElj_l385gEhmjXZCGN0XfM",
+  authDomain: "vue-pro-4ac9d.firebaseapp.com",
+  databaseURL: "https://vue-pro-4ac9d.firebaseio.com",
+  projectId: "vue-pro-4ac9d",
+  storageBucket: "vue-pro-4ac9d.appspot.com",
+  messagingSenderId: "1033922219643",
+  appId: "1:1033922219643:web:76b4173e6918803b161cde",
+  measurementId: "G-400NNFH1M2"
 })
 
 let app
