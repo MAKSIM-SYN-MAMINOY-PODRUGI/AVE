@@ -798,7 +798,6 @@ main {
 	&.sign-up {
 		@include center;
 		@include flex;
-		flex-wrap: wrap;
 		justify-content: space-between;
 		.title {
 			font-family: "Montserrat";
